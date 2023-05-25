@@ -7,84 +7,75 @@
     <title>qubit dynamics</title>
     <style>
       html, body {
-        height: 100%;
         width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
       }
-      body {
-        background-image: url("./homebg.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100%;
-      }
-      /* 
       .main {
-        height: 400px;
-        width: 900px;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
- */
-      .bg {
-        position: absolute;
         height: 100%;
         width: 100%;
+        background-image: url("homebg.jpg");
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .backdrop {
+        height: 360px;
+        width: 600px;
+        position: absolute;
+        top: 20%;
         background-color: #2a3638;
         opacity: 0.7;
         z-index: 1;
       }
       .post{
-        height: 100%;
-        width: 100%;
         position: absolute;
+        top: 20%;
+        padding: 30px 0;
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         color: white;
         z-index: 2;
       }
       .tagline {
-        font-size: 2.2vw;
+        font-size: 1.5em;
         color:rgb(236, 194, 65)
       }
       .title {
-        font-size: 4vw;
+        font-size: 3em;
         font-weight: bold;
       }
       .subtitle {
         margin-top: 5px;
-        font-size: 1vw;
+        font-size: 1.3em;
         text-align: center;
         color:rgb(216, 216, 216)
       }
       .content {
-        font-size: 2vw;
+        font-size: 2.5em;
         font-family: Georgia, Cambria, Cochin, serif;
-        color:#df8b5e
+        color:#f3bd58
       }
       .footer {
-        font-size: 0.8vw;
-      }
-      @media screen and (max-width: 600px) {
+        font-size: 0.8em;
+      } 
+      @media screen and (min-width: 1263px) {
         .main {
-          height: 100%;
-          width: 100%;
-          top: 0;
-          left: 0;
-          transform: none;
+          background-size: 100% auto;
         }
       }
     </style>
   </head>
   <body>
-
-      <div class="bg"></div>
+    <div class="main">
+      <div class="backdrop"></div>
       <div class="post">
         <div class="tagline">The next generation of no-code</div>
         <div>
@@ -95,6 +86,14 @@
         <div class="footer">For enquiries, please reach out to <u>contact@component.app</u></div>
       </div>
     </div>
-
+  </body>
 </html>
 
+<!-- 
+
+
+
+
+
+
+ -->
