@@ -19,6 +19,7 @@
         background-position: center center;
         background-size: 100%;
       }
+      /* 
       .main {
         height: 400px;
         width: 900px;
@@ -27,6 +28,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+ */
       .bg {
         position: absolute;
         height: 100%;
@@ -48,26 +50,28 @@
         z-index: 2;
       }
       .tagline {
-        font-size: 2.2em;
+        font-size: 2.2vw;
         color:rgb(236, 194, 65)
       }
       .title {
-        font-size: 4em;
+        font-size: 4vw;
         font-weight: bold;
       }
       .subtitle {
+        margin-top: 5px;
+        font-size: 1vw;
         text-align: center;
-        color:rgb(172, 172, 172)
+        color:rgb(216, 216, 216)
       }
       .content {
-        font-size: 2em;
+        font-size: 2vw;
         font-family: Georgia, Cambria, Cochin, serif;
         color:#df8b5e
       }
       .footer {
-        font-size: 0.8em;
+        font-size: 0.8vw;
       }
-      @media screen {
+      @media screen and (max-width: 600px) {
         .main {
           height: 100%;
           width: 100%;
@@ -79,7 +83,7 @@
     </style>
   </head>
   <body>
-    <div class="main">
+
       <div class="bg"></div>
       <div class="post">
         <div class="tagline">The next generation of no-code</div>
@@ -91,6 +95,6 @@
         <div class="footer">For enquiries, please reach out to <u>contact@component.app</u></div>
       </div>
     </div>
-  </body>
+
 </html>
 
